@@ -31,7 +31,7 @@
 	<key>SUEnableAutomaticChecks</key>
 	<false/>
 	<key>SUFeedURL</key>
-	<string>https://github.com/potor-com/Enko/releases/latest/download/appcast.xml</string>
+	<string>https://potor-com.github.io/Enko/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>2yyUG/D9LYWz55OXVqMXs+RTGw6Rd1qLi59ZZds2jpM=</string>
 </dict>

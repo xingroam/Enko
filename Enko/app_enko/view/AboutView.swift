@@ -48,12 +48,12 @@ struct AboutView: View {
   }
 
   private func openPrivacyPolicy() {
-    guard let url = URL(string: "https://github.com/potor-com/Enko/blob/main/docs/PRIVACY.md") else { return }
+    guard let url = URL(string: "https://potor-com.github.io/Enko/PRIVACY.md") else { return }
     NSWorkspace.shared.open(url)
   }
 
   private func openDisclaimer() {
-    guard let url = URL(string: "https://github.com/potor-com/Enko/blob/main/docs/DISCLAIMER.md") else { return }
+    guard let url = URL(string: "https://potor-com.github.io/Enko/DISCLAIMER.md") else { return }
     NSWorkspace.shared.open(url)
   }
 
