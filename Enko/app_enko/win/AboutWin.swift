@@ -23,7 +23,12 @@ class AboutWin: NSObject, NSWindowDelegate {
     window = NSWindow(contentViewController: host)
     guard let w = window else { return }
     w.title = ""
-    w.styleMask = [.titled, .closable, .miniaturizable]
+    w.styleMask = [.titled, .closable, .miniaturizable, .fullSizeContentView]
+    w.titleVisibility = .hidden
+    w.titlebarAppearsTransparent = true
+    w.isOpaque = false
+    w.backgroundColor = .clear
+    w.isMovableByWindowBackground = true
     w.standardWindowButton(.zoomButton)?.isHidden = true
     w.standardWindowButton(.miniaturizeButton)?.isHidden = false
     w.level = .popUpMenu

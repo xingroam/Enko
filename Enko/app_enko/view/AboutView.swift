@@ -70,7 +70,7 @@ struct AboutView: View {
         if !appVersionLabel.isEmpty {
           Text(appVersionLabel)
             .font(.system(size: 12, weight: .medium, design: .rounded))
-            .foregroundStyle(.secondary)
+            .foregroundStyle(.primary)
         }
       }
       .frame(maxWidth: .infinity, alignment: .center)
@@ -133,7 +133,12 @@ struct AboutView: View {
       }
       .frame(maxWidth: .infinity, alignment: .center)
     }
-    .padding(.horizontal, 50)
-    .padding(.vertical, 20)
+    .padding(.horizontal, 40)
+    .padding(.top, 40)
+    .padding(.bottom, 20)
+    .background(BlurredBackground(material: .underWindowBackground, blendingMode: .behindWindow, blur: 1.0))
+    .compositingGroup()
+    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+    .ignoresSafeArea(edges: .top)
   }
 }
