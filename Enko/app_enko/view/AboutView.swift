@@ -1,7 +1,7 @@
 import SwiftUI
 import AppKit
 
-struct AboutTabView: View {
+struct AboutView: View {
   @StateObject private var languageManager = LanguageManager.s
 
   private var appDescription: String {
@@ -133,7 +133,7 @@ struct AboutTabView: View {
       }
       .frame(maxWidth: .infinity, alignment: .center)
     }
-    .padding(.horizontal, 40)
+    .padding(.horizontal, 50)
     .padding(.vertical, 20)
   }
 }

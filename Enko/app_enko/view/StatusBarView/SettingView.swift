@@ -91,6 +91,14 @@ private struct StatusBarMainPageHeightKey: PreferenceKey {
 struct StatusBarMenuWindowContentView: View {
   @StateObject private var languageManager = LanguageManager.s
 
+  private func dismissStatusBarMenu() {
+    NSApp.sendAction(#selector(NSMenu.cancelTracking), to: nil, from: nil)
+    if let keyWindow = NSApp.keyWindow {
+      keyWindow.orderOut(nil)
+      keyWindow.close()
+    }
+  }
+
   var body: some View {
     VStack(spacing: 10) {
       SettingView()
@@ -98,10 +106,16 @@ struct StatusBarMenuWindowContentView: View {
       HStack(spacing: 10) {
         Menu {
           Button(languageManager.localizedString("enko.menu.check_updates")) {
-            UpdateManager.s.checkForUpdates()
+            dismissStatusBarMenu()
+            DispatchQueue.main.async {
+              UpdateManager.s.checkForUpdates()
+            }
           }
           Button(languageManager.localizedString("enko.settings.tab.about")) {
-            AboutWin.s.show()
+            dismissStatusBarMenu()
+            DispatchQueue.main.async {
+              AboutWin.s.show()
+            }
           }
         } label: {
           Image(systemName: "ellipsis.circle")
