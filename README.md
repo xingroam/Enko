@@ -29,7 +29,3 @@ For generated SSH keys, avoid storing plaintext long-term in the file system. In
 ## System Requirements
 
 macOS 14+
-
-## License
-
-GPL-3.0
