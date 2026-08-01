@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./docs/assets/logo.png" height="256">
-  <h2 align="center">Enko</h2>
+  <h3 align="center">Enko</h3>
   <h4 align="center">Encrypted clipboard for macOS</h4>
   <p align="center">
     <a href="https://github.com/potor-com/Enko/blob/main/LICENSE.md">
