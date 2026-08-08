@@ -8,7 +8,7 @@ final class ClipboardManager {
 
   var onSecureCopy: (() -> Void)?
 
-  let stateQueue = DispatchQueue(label: "com.potor.Enko.clipboard.state")
+  let stateQueue = DispatchQueue(label: "xingroam.Enko.clipboard.state")
   var encryptedPayloadData: Data?
   var encryptedPayloadKeyData: Data?
   var encryptedSessionWrapKeyData: Data?
@@ -20,7 +20,7 @@ final class ClipboardManager {
   var workspaceSleepObserver: NSObjectProtocol?
   var workspaceSessionResignObserver: NSObjectProtocol?
   var screenLockObserver: NSObjectProtocol?
-  let processingQueue = DispatchQueue(label: "com.potor.Enko.clipboard.processing")
+  let processingQueue = DispatchQueue(label: "xingroam.Enko.clipboard.processing")
   var isInjectingKeyEvent = false
   var hotkeysSuspended = false
 

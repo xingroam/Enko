@@ -13,6 +13,9 @@ struct EnkoInfo {
   static let bundleIdentifierLowercased = { Bundle.main.bundleIdentifier?.lowercased() ?? "" }()
 
   static let statusBarCopyAnimationDuration: TimeInterval = 0.2
+
+  static let enkoJson = "https://xingroam.github.io/Enko/enko.json"
+  static let enkoJsonHour = 24
 }
 
 struct EnkoDefine {
@@ -134,7 +137,7 @@ struct EnkoConfig {
 }
 
 enum EnkoKeychainRootKey {
-  private static let service = "com.potor.Enko"
+  private static let service = "xingroam.Enko"
   private static let account = "enko.keychain.root.v1"
 
   static func encrypt(data: Data, context: String) -> Data? {

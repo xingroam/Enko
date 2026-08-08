@@ -33,27 +33,27 @@ struct AboutView: View {
   }
 
   private func openGitHub() {
-    guard let url = URL(string: "https://github.com/potor-com/Enko") else { return }
+    guard let url = URL(string: "https://github.com/xingroam/Enko") else { return }
     NSWorkspace.shared.open(url)
   }
 
   private func openContributors() {
-    guard let url = URL(string: "https://github.com/potor-com/Enko/graphs/contributors") else { return }
+    guard let url = URL(string: "https://github.com/xingroam/Enko/graphs/contributors") else { return }
     NSWorkspace.shared.open(url)
   }
 
   private func openFeedback() {
-    guard let url = URL(string: "https://github.com/potor-com/Enko/issues/new/choose") else { return }
+    guard let url = URL(string: "https://github.com/xingroam/Enko/issues/new") else { return }
     NSWorkspace.shared.open(url)
   }
 
   private func openPrivacyPolicy() {
-    guard let url = URL(string: "https://potor-com.github.io/Enko/PRIVACY.md") else { return }
+    guard let url = URL(string: "https://xingroam.github.io/Enko/PRIVACY.md") else { return }
     NSWorkspace.shared.open(url)
   }
 
   private func openDisclaimer() {
-    guard let url = URL(string: "https://potor-com.github.io/Enko/DISCLAIMER.md") else { return }
+    guard let url = URL(string: "https://xingroam.github.io/Enko/DISCLAIMER.md") else { return }
     NSWorkspace.shared.open(url)
   }
 
@@ -127,7 +127,7 @@ struct AboutView: View {
           .buttonStyle(.plain)
         }
 
-        Text("© \(String(currentYear)) Potor")
+        Text("© \(String(currentYear)) XingRoam")
           .font(.system(size: 12))
           .foregroundStyle(.primary)
       }

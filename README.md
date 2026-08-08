@@ -3,10 +3,10 @@
   <h3 align="center">Enko</h3>
   <p align="center">Encrypted clipboard for macOS</p>
   <p align="center">
-    <a href="https://github.com/potor-com/Enko/blob/main/LICENSE.md">
-    <img src="https://img.shields.io/github/license/potor-com/Enko" alt="License"></a>
-    <a href="https://github.com/potor-com/Enko/releases">
-    <img src="https://img.shields.io/github/downloads/potor-com/Enko/total.svg" alt="Downloads"></a>
+    <a href="https://github.com/xingroam/Enko/blob/main/LICENSE.md">
+    <img src="https://img.shields.io/github/license/xingroam/Enko" alt="License"></a>
+    <a href="https://github.com/xingroam/Enko/releases">
+    <img src="https://img.shields.io/github/downloads/xingroam/Enko/total.svg" alt="Downloads"></a>
   </p>
 </div>
 
@@ -20,7 +20,7 @@ Enko is an encrypted clipboard tool for macOS. Unlike similar apps that briefly 
 
 ### Download
 
-[https://github.com/potor-com/Enko/releases](https://github.com/potor-com/Enko/releases)
+[https://github.com/xingroam/Enko/releases](https://github.com/xingroam/Enko/releases)
 
 ### System Requirements
 
